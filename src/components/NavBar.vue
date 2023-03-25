@@ -6,24 +6,34 @@ import EcosystemIcon from './icons/IconEcosystem.vue'
 
 <template>
     <nav>
-        <RouterLink to="/"><ToolingIcon class="icon" /></RouterLink>
-        <RouterLink to="/about"><EcosystemIcon class="icon"/></RouterLink>
+        <RouterLink to="/" class="link"><ToolingIcon class="icon" /></RouterLink>
+        <RouterLink to="/about" class="link"><EcosystemIcon class="icon"/></RouterLink>
     </nav>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 nav {
-    background-color: var(--dark-blue);
+    background-color: var(--blue-800);
     height: 100vh;
-    padding: 48px 12px;
+    width:100px;
+    padding: 48px 30px 48px 45px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.link {
+    margin-bottom: 36px;
+    &:hover .icon{
+        color: var(--soft-yellow);
+        opacity: 1;
+    }
+}
 .icon {
-    color: var(--soft-yellow);
-    height: 16px;
+    color: var(--blue-100);
+    height: 24px;
+    opacity: 0.7;
+    
 }
 </style>

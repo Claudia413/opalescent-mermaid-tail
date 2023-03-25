@@ -1,15 +1,20 @@
 @import './base.css';
 
 :root {
-  --dark-blue: #202634;
-  --mist-grey-100: #ACBCBC;
-  --mist-grey-400: #8CA4A6;
+  --blue-100: #ACBCBC;
+  --blue-200: #8CA4A6;
+  --blue-500: #414C60;
+  --blue-800: #202634;
   --cream-white: #FEF9F3;
-  --peach-accent: #E6A383;
-  --dark-yellow: #D99031;
-  --soft-yellow: #A79B82;
+  --cream-white-200: #F4F3EE;
+  --cream-white-300: #E7E8E7;
   --grey-500: #878380;
-  background-color: var(--cream-white);
+  --peach-accent: #E6A383;
+  --yellow-500: #D99031;
+  --dark-yellow-800: #945A2F;
+  --soft-yellow: #A79B82;
+  
+  background-color: var(--cream-white-300);
 }
 
 
